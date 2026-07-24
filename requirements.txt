@@ -1,0 +1,6 @@
+opencv-python
+mediapipe
+numpy
+pynput
+
+and of course a subway surfers game emulator that can be played using arrow keys
