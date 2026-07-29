@@ -1,3 +1,5 @@
+#just a testing file to see if the pipeline is working. not part of the game itself.
+
 import cv2
 import mediapipe as mp
 import numpy as np
