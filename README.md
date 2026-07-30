@@ -78,9 +78,9 @@ conda create -n pose python=3.11 -y
 conda activate pose
 pip install opencv-python "mediapipe==0.10.14" numpy pandas scikit-learn pynput
 
-# NOTE: both Subway Surfers and Gait Analysis are trained entirely on my body. Skip to step 3. if you
-# don't want to train on your own body and go straight to playing. Consider that it might not function
-# properly due to different body shapes.
+# NOTE: both Subway Surfers and Gait Analysis are trained entirely on my body. Skip to step 3.
+# if you don't want to train on your own body and go straight to playing. Consider that it
+# might not function properly due to different body shapes.
 
 # ── Subway Surfers ──────────────────────────────────────────
 
