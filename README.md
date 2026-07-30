@@ -2,6 +2,8 @@
 
 Real-time body tracking that replaces keyboard input with full-body movement, demonstrated on Subway Surfers. The same architecture detects asymmetric gait patterns associated with neurological and musculoskeletal disorders.
 
+YouTube demo: https://www.youtube.com/watch?v=6GBaegb5wKo
+
 ---
 
 ## Motivation
@@ -63,6 +65,9 @@ Both models were trained exclusively on one person's body. The gesture classifie
 
 ## How to Run
 
+<details>
+<summary><strong>Setup and training instructions (click to expand)</strong></summary>
+
 ```bash
 # Clone the repository
 git clone https://github.com/enstrong/pose-controlled-gaming.git
@@ -73,8 +78,8 @@ conda create -n pose python=3.11 -y
 conda activate pose
 pip install opencv-python "mediapipe==0.10.14" numpy pandas scikit-learn pynput
 
-# NOTE: both Subway Surfers and Gait Analysis are trained entirely on my body. Skip to 3. if you don't
-# want to train on your own body and go straight to playing. Consider that it might not funcation
+# NOTE: both Subway Surfers and Gait Analysis are trained entirely on my body. Skip to step 3. if you
+# don't want to train on your own body and go straight to playing. Consider that it might not function
 # properly due to different body shapes.
 
 # ── Subway Surfers ──────────────────────────────────────────
@@ -100,6 +105,7 @@ python gait/train_gait.py
 # 3. Run live gait analysis
 python gait/analyze_gait.py
 ```
+</details>
 
 **Notes on setup.** macOS requires camera and accessibility permissions granted to Terminal (System Settings → Privacy & Security). The game controller sends global keyboard events via `pynput` — Subway Surfers must be the focused window when `game.py` is running. Both classifiers require retraining on your own body; the trained `.pkl` files are not included in the repository because they are person-specific.
 
